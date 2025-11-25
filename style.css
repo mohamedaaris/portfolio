@@ -13,17 +13,20 @@ body{
 .header{
     background: rgba(0, 24, 41, 0.95);
     backdrop-filter: blur(10px);
-    padding: 20px 10%;
+    padding: 15px 20%;
     position :fixed;
     top :0;
     left: 0;
     width: 100%;
     margin: 0px 0px;
+    margin-left: auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     border-bottom: 1px solid rgba(14, 235, 235, 0.3);
-    z-index: 100;
+    z-index: 999999999;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 .cen{
@@ -540,9 +543,11 @@ margin: 0;
         overflow-x: hidden;
     }
     .header {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        padding: 15px 20%;
+        justify-content: space-between;
     }
 
     .logo {
@@ -676,6 +681,7 @@ margin: 0;
     .menu-icon {
         display: block;
         z-index: 999999999;
+        margin-left: auto;
     }
     .cour{
         display: none;
